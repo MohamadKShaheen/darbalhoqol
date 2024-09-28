@@ -1,0 +1,48 @@
+.carouselContainer {
+    position: relative;
+    width: 100%;
+    max-width: 900px; /* Adjust the max width to accommodate 3 cards */
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.cardWrapper {
+    overflow: hidden;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.cardContainer {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.card {
+    min-width: calc(100% / 3); /* Adjust card width to show 3 at a time */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: yellow;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.chevron {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    z-index: 10;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
