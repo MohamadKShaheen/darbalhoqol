@@ -1,0 +1,35 @@
+.container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+.first_half {
+    width: 50%;
+    height: 100%;
+    background-color: green;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered_image {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: white;
+}
+
+.second_half {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.second_half.full_image {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
