@@ -3,9 +3,9 @@ import React, { useState, useEffect } from 'react';
 import styles from './carouselwithimages.module.css';
 
 const images = [
-  'https://images.stockcake.com/public/e/b/a/eba91e95-1a4f-4420-addf-82a46ce2e54c_large/cardinal-in-snow-stockcake.jpg',
-  'https://images.stockcake.com/public/0/7/7/077d1b67-4bb0-439b-b91f-7dfbe235c809_large/lighthouse-at-night-stockcake.jpg',
-  'https://images.stockcake.com/public/f/7/a/f7a33c09-22e0-482c-b5f3-823d1fb60143_large/elderly-man-reading-stockcake.jpg',
+  '/images/A1.jpg',
+  '/images/A4.jpg',
+  '/images/A2.jpg',
 ];
 
 const CarouselWithImages = () => {
@@ -30,18 +30,17 @@ const CarouselWithImages = () => {
         style={{transform: `translateX(-${currentImageIndex * 100}%)`}}
       >
         {images.map((image, index) => (
-          <img
-            key={index}
-            alt=''
-            src={image}
-            className={styles.slide}
-          />
+          <div className={styles.slideContainer} key={index}>
+            <img
+              alt=''
+              src={image}
+              className={styles.slide}
+            />
+          </div>
         ))}
       </div>
       <div className={styles.header}>
-        <p>
-          Fresh Produce Delivery
-        </p>
+        <img src="/images/logo.png" alt="" className="w-full h-full"/>
       </div>
       <div className={styles.dots}>
         {images.map((_, index) => (

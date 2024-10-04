@@ -10,11 +10,13 @@
     transition: transform 1s ease-in-out; /* Smooth sliding transition */
 }
 
-.slide {
+.slideContainer {
     min-width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
+}
+
+.slide {
+    min-width: 100%;
 }
 
 .dots {
@@ -41,8 +43,9 @@
 
 .header {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
     font-size: 6rem;
+    height: 200px;
+    width: 200px;
 }

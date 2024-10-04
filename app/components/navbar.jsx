@@ -1,15 +1,19 @@
 import Link from 'next/link';
+import styles from './navbar.module.css';
 
 const Navbar = () => {
   return (
-    <nav className="flex flex-row-reverse justify-between">
-      <ul className="flex justify-end w-[70%] bg-green-200 text-black">
-        <li className="m-3"><Link href="/">Home</Link></li>
-        <li className="m-3"><Link href="/about">About</Link></li>
-        <li className="m-3"><Link href="/contact">Contact</Link></li>
+    <nav className="flex flex-row-reverse justify-between h-[75px]">
+      <div className="bg-[#23410a] w-auto flex-grow">
+        <img src="/images/logo.png" alt="" className="w-full h-full"/>
+      </div>
+      <ul className={styles.unorderedList}>
+        <li className={styles.element}><Link href="/">Home</Link></li>
+        <li className={styles.element}><Link href="/about">About</Link></li>
+        <li className={styles.element}><Link href="/contact">Contact</Link></li>
       </ul>
-      <div className="w-[30%] p-3 bg-amber-300 text-black flex justify-center">
-        <h1>Darb Alhoqol</h1>
+      <div className={styles.header}>
+        <h1 className={styles.text}>Darb Alhoqol</h1>
       </div>
     </nav>
   );
