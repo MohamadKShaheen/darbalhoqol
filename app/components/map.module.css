@@ -1,13 +1,70 @@
 .container {
     width: 100%;
     height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+.mapHeader {
+    width: 98%;
+    margin: 0 auto 10px;
+    position: relative;
+    font-size: 35px;
+}
+
+.mapHeader::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px; /* Thickness of the underline */
+    width: 58px;; /* Custom length: 50% of the text width */
+    background-color: #2E2C2B;
+}
+
+.secondContainer {
+    width: 80%;
+    height: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+
+.canada {
+    position: absolute;
+    left: 24%;
+    top: 29%;
+}
+
+.oman {
+    position: absolute;
+    left: 61%;
+    top: 51%;
+}
+
+.UAE {
+    position: absolute;
+    left: 61.5%;
+    top: 48%;
+}
+
+.saudi {
+    position: absolute;
+    left: 58%;
+    top: 49%;
+}
+
+.syria {
+    position: absolute;
+    left: 57%;
+    top: 43%;
+}
+
+.egypt {
+    position: absolute;
+    left: 54.5%;
+    top: 46%;
 }
 
 .image {
-    width: 80%;
-    max-width: 1000px;
-    height: 100%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto
 }
