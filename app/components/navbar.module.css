@@ -1,5 +1,5 @@
 .unorderedList {
-    background: linear-gradient(90deg, rgba(208,197,154,1) 0%, rgba(35,65,10,1) 100%);
+    background: linear-gradient(90deg, rgba(208,197,154,1) 0%, #3A5B39 100%);
     display: flex;
     justify-content: end;
     align-items: center;
@@ -14,7 +14,7 @@
 }
 
 .header {
-    background: linear-gradient(90deg, rgba(221,197,100,1) 0%, rgba(208,197,154,1) 100%);
+    background: linear-gradient(90deg, #E9C77B 0%, rgba(208,197,154,1) 100%);
     padding: 3px;
     display: flex;
     justify-content: center;

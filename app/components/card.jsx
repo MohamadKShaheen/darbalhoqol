@@ -3,13 +3,10 @@ import styles from './card.module.css';
 const Card = ({image, description}) => {
   return (
     <div className={styles.container}>
-      <div className={styles.image_container}>
-        <img src={image ?? ''} className={styles.image}>
-        </img>
-      </div>
-      <div className={styles.description}>
-        <p>
-          { description ?? '' }
+      <img src={image ?? ''} className={styles.image} />
+      <div className={styles.descriptionContainer}>
+        <p className={styles.description}>
+          {description}
         </p>
       </div>
     </div>

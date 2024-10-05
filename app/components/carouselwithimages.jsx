@@ -4,8 +4,8 @@ import styles from './carouselwithimages.module.css';
 
 const images = [
   '/images/A1.jpg',
+  '/images/A3.jpg',
   '/images/A4.jpg',
-  '/images/A2.jpg',
 ];
 
 const CarouselWithImages = () => {
@@ -39,9 +39,9 @@ const CarouselWithImages = () => {
           </div>
         ))}
       </div>
-      <div className={styles.header}>
-        <img src="/images/logo.png" alt="" className="w-full h-full"/>
-      </div>
+      {/*<div className={styles.header}>*/}
+      {/*  <img src="/images/logo.png" alt="" className="w-full h-full"/>*/}
+      {/*</div>*/}
       <div className={styles.dots}>
         {images.map((_, index) => (
           <div

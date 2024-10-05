@@ -4,7 +4,7 @@ import styles from './navbar.module.css';
 const Navbar = () => {
   return (
     <nav className="flex flex-row-reverse justify-between h-[75px]">
-      <div className="bg-[#23410a] w-auto flex-grow">
+      <div className="bg-[#3A5B39] w-auto flex-grow">
         <img src="/images/logo.png" alt="" className="w-full h-full"/>
       </div>
       <ul className={styles.unorderedList}>
