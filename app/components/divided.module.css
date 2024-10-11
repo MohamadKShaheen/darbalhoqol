@@ -3,8 +3,8 @@
     height: max(32vw, 200px);
     display: flex;
     flex-direction: row;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
 }
 
 .first_half {
