@@ -1,9 +1,15 @@
+.logo {
+    background-color: #3a5b39;
+    width: 4vw;
+    min-width: 48px;
+}
+
 .unorderedList {
     background: linear-gradient(90deg, rgba(208,197,154,1) 0%, #3A5B39 100%);
     display: flex;
     justify-content: end;
     align-items: center;
-    width: 60%;
+    flex-grow: 6;
 }
 
 .element {
@@ -11,6 +17,7 @@
     background: linear-gradient(90deg, rgba(221,197,100,1) 0%, rgba(208,197,154,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: max(14px, 1vw);
 }
 
 .header {
@@ -19,7 +26,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    flex-grow: 4;
+    font-size: max(18px, 1.5vw);
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .text {

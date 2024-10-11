@@ -7,7 +7,7 @@
 
 .box {
     display: flex;
-    width: 920px;
+    max-width: 920px;
     margin: 0 auto;
     background-color: #fff;
     padding: 30px;
@@ -47,7 +47,7 @@
 
 .socialMedia {
     display: flex;
-    width: 920px;
+    max-width: 920px;
     margin: 40px auto 0;
 }
 
