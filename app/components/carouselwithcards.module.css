@@ -9,7 +9,7 @@
     width: 98%;
     margin: 0 auto 10px;
     position: relative;
-    font-size: 35px;
+    font-size: 2.1vw;
 }
 
 .carouselHeader::after {
@@ -17,8 +17,8 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 2px; /* Thickness of the underline */
-    width: 58px;; /* Custom length: 50% of the text width */
+    height: 2px;
+    width: 3.5vw;
     background-color: #2E2C2B;
 }
 
