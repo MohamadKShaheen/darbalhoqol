@@ -11,8 +11,8 @@ const category = ({params}) => {
         description: "Dry"
       },
       {
-        image: '/images/B7.jpeg',
-        description: "Dry"
+        image: '/images/B2.jpeg',
+        description: "Pickles",
       },
       {
         image: '/images/B7.jpeg',
@@ -78,14 +78,12 @@ const category = ({params}) => {
   }
 
   return (
-    <div>
-      <div className={styles.cardContainer}>
-        {Data[category].map((product, index) => (
-          <div key={index} className={styles.card}>
-            <Card image={product.image} description={product.description}></Card>
-          </div>
-        ))}
-      </div>
+    <div className={styles.cardContainer}>
+      {Data[category].map((product, index) => (
+        <div key={index} className={styles.card}>
+          <Card image={product.image} description={product.description}></Card>
+        </div>
+      ))}
     </div>
   );
 }
