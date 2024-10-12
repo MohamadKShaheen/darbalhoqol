@@ -9,6 +9,7 @@ const Navbar = () => {
       </div>
       <ul className={styles.unorderedList}>
         <li className={styles.element}><Link href="/">Home</Link></li>
+        <li className={styles.element}><Link href="/ourproducts">Our Products</Link></li>
         <li className={styles.element}><Link href="/about">About</Link></li>
         <li className={styles.element}><Link href="/contact">Contact</Link></li>
       </ul>

@@ -1,5 +1,3 @@
-'use client'
-import { useState } from "react";
 import styles from './CarouselWithCards.module.css';
 import Card from "@/app/components/card";
 

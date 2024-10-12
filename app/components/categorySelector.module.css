@@ -1,0 +1,24 @@
+/* Sidebar styles */
+.sidebar {
+    background-color: #3A5B39;
+    padding: 20px;
+    height: 100%;
+}
+
+.categoryList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.categoryList li {
+    margin-bottom: 10px;
+}
+
+.categoryList a {
+    text-decoration: none;
+    color: black;
+}
+
+.categoryList a:hover {
+    color: blue;
+}

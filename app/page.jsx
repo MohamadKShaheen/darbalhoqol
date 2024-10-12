@@ -3,7 +3,7 @@ import CarouselWithCards from "@/app/components/carouselwithcards";
 import Divided from "@/app/components/divided";
 import Map from "@/app/components/map";
 
-export default function Home() {
+const Home = () => {
   return (
     <main>
       <CarouselWithImages />
@@ -13,3 +13,5 @@ export default function Home() {
     </main>
   );
 }
+
+export default Home;
