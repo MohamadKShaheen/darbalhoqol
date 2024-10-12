@@ -1,8 +1,10 @@
-'use client'
-import {useRouter} from "next/navigation";
+import CardDisplayer from "@/app/components/cardDisplayer";
+import products from "@/public/Data/products";
 
 const OurProducts = () => {
-  return <h1>Our Products</h1>
+  return (
+    <CardDisplayer data={products} category="Main"/>
+  );
 }
 
 export default OurProducts;
