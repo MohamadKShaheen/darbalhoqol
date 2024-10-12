@@ -6,11 +6,9 @@ import styles from "./page.module.css";
 export default function AboutPage() {
   return (
     <>
-      <Image src="/images/A1.jpg" alt="" />
-      <Divided />
-      <div className={styles.container}>
-        <CarouselWithImages />
-      </div>
+      <div><Image src="/images/A1.jpg" alt="" /></div>
+      <div><Divided /></div>
+      <div className={styles.container}><CarouselWithImages /></div>
     </>
   );
 }

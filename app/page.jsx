@@ -6,10 +6,10 @@ import Map from "@/app/components/map";
 const Home = () => {
   return (
     <main>
-      <CarouselWithImages />
-      <CarouselWithCards />
-      <Divided />
-      <Map />
+      <div><CarouselWithImages /></div>
+      <div className="mt-[2vw]"><CarouselWithCards /></div>
+      <div className="mt-[4vw] mb-[4vw]"><Divided /></div>
+      <div><Map /></div>
     </main>
   );
 }
