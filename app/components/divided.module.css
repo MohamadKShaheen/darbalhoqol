@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    height: max(32vw, 200px);
+    height: max(32vw, 360px);
     display: flex;
     flex-direction: row;
 }

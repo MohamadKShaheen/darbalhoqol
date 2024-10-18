@@ -49,7 +49,7 @@ const Divided = ({ mode, image1, image2, header, text }) => {
       )}
       {mode === 3 && (
         <div className={styles.container}>
-          <div className={`${styles.first_half}`}>
+          <div className={`${styles.first_half} bg-[#3a5b39]`}>
             <ContactForm />
           </div>
           <div className={`${styles.second_half} bg-[#ffffff]`}>

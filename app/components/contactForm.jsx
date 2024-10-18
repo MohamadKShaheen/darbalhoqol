@@ -1,6 +1,6 @@
 "use client"
 import { useState } from 'react';
-import sendMail from "@/lib/mail";
+import styles from "./contactForm.module.css";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -38,61 +38,67 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ maxWidth: '500px', margin: 'auto' }}>
-      <div>
-        <label>First Name</label>
+    <form onSubmit={handleSubmit} className={styles.form}>
+      <div className={styles.field}>
+        <label style={{display: "block"}}>First Name</label>
         <input
           type="text"
           name="firstName"
           value={formData.firstName}
           onChange={handleChange}
           required
+          className={styles.input}
         />
       </div>
 
-      <div>
-        <label>Last Name</label>
+      <div className={styles.field}>
+        <label  style={{display: "block"}}>Last Name</label>
         <input
           type="text"
           name="lastName"
           value={formData.lastName}
           onChange={handleChange}
           required
+          className={styles.input}
         />
       </div>
 
-      <div>
-        <label>Email</label>
+      <div className={styles.field}>
+        <label style={{display: "block"}}>Email</label>
         <input
           type="email"
           name="email"
           value={formData.email}
           onChange={handleChange}
           required
+          className={styles.input}
         />
       </div>
 
-      <div>
-        <label>Phone</label>
+      <div className={styles.field}>
+        <label style={{display: "block"}}>Phone</label>
         <input
           type="tel"
           name="phone"
           value={formData.phone}
           onChange={handleChange}
+          className={styles.input}
         />
       </div>
 
-      <div>
-        <label>Message</label>
+      <div className={styles.message}>
+        <label style={{display: "block"}}>Message</label>
         <textarea
           name="message"
           value={formData.message}
           onChange={handleChange}
           required
+          style={{width: "95%"}}
+          className={styles.input}
         ></textarea>
       </div>
 
-      <button onClick={handleSubmit}>Send Message</button>
+      <button type='submit' className={styles.button}>Send Message</button>
     </form>
   );
 };

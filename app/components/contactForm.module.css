@@ -1,0 +1,30 @@
+.form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.field {
+    flex: 0 0 50%;
+}
+
+.message {
+    flex: 1 0 90%;
+}
+
+.button {
+    flex: 1 0 100%;
+}
+
+.input {
+    background-color: transparent;
+    border: 1px solid #2E2C2B;
+    color: #000;
+    padding: 10px;
+    outline: none;
+    font-size: 0.5vw;
+    margin: 5px;
+    width: 90%;
+    border-radius: 5px;
+}
