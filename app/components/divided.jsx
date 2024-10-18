@@ -1,28 +1,66 @@
+"use client"
 import styles from './divided.module.css';
+import Image from "@/app/components/image";
+import ContactForm from "@/app/components/contactForm";
 
-const Divided = () => {
+const Divided = ({ mode, image1, image2, header, text }) => {
   return (
-    <div className={styles.container}>
-      <div className={styles.first_half}>
-        <div className={styles.centered_image}>
-          <img className={styles.second_half_image} src="/images/factory.jpeg"/>
+    <>
+      {mode === 1 && (
+        <div className={styles.container}>
+          <div className={`${styles.first_half} bg-[#3A5B39]`}>
+            <div className={styles.centered_image}>
+              <img className={styles.second_half_image} src={image1}/>
+            </div>
+          </div>
+          <div className={`${styles.second_half}`}>
+            <div className={styles.full_image}>
+              <img className={styles.first_half_image} src={image2}/>
+            </div>
+            <div className={`${styles.text} text-[#f4f1ed] bg-[#0000004D]`}>
+              <h2 className={styles.header}>
+                {header}
+              </h2>
+              <p className={styles.paragraph}>
+                {text}
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className={styles.second_half}>
-        <div className={styles.full_image}>
-          <img className={styles.first_half_image} src="/images/field.jpg"/>
+      )}
+      {mode === 2 && (
+        <div className={styles.container}>
+          <div className={`${styles.first_half} bg-[#ffffff]`}>
+            <div className={styles.text}>
+              <h2 className={styles.header}>
+                {header}
+              </h2>
+              <p className={styles.paragraph}>
+                {text}
+              </p>
+            </div>
+          </div>
+          <div className={`${styles.second_half} bg-[#3a5b39]`}>
+            <div className="w-[50%] absolute translate-x-[-50%] translate-y-[-50%] left-[50%] top-[50%]">
+              <Image src={image1}/>
+            </div>
+          </div>
         </div>
-        <div className={styles.text}>
-          <h2 className={styles.header}>
-            Why DARB ALHOOQUL?
-          </h2>
-          <p className={styles.paragraph}>
-            At DARB ALHOOQUL, we blend tradition with innovation to deliver the finest quality products. From carefully selected olives and fresh vegetables to artisanal pickles, sauces, and jams, every product is crafted with a commitment to purity and excellence. Our farm-to-table approach ensures that each item is sustainably sourced and packed with natural flavors, bringing you the best that nature has to offer. Trust DARB ALHOOQUL for premium products that are as fresh as they are authentic.
-          </p>
+      )}
+      {mode === 3 && (
+        <div className={styles.container}>
+          <div className={`${styles.first_half}`}>
+            <ContactForm />
+          </div>
+          <div className={`${styles.second_half} bg-[#ffffff]`}>
+            <div className="w-[50%] absolute translate-x-[-50%] translate-y-[-50%] left-[50%] top-[50%]">
+              <Image src={image1}/>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  );
+      )}
+    </>
+  )
 }
 
 export default Divided;

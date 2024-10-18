@@ -2,13 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import styles from './carouselwithimages.module.css';
 
-const images = [
-  '/images/A1.jpg',
-  '/images/A3.jpg',
-  '/images/A4.jpg',
-];
 
-const CarouselWithImages = () => {
+
+const CarouselWithImages = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
