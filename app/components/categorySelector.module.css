@@ -1,7 +1,6 @@
 .sidebar {
     background-color: #3A5B39;
-    padding: 20px;
-    height: 100%;
+    padding: 20px 0;
 }
 
 .categoryList {
@@ -14,13 +13,11 @@
     color: #F6E5C2;
     font-weight: bold;
     font-size: 20px;
+    cursor: pointer;
+    transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
+    padding: 0 20px;
 }
 
-.categoryList a {
-    text-decoration: none;
-    color: black;
-}
-
-.categoryList a:hover {
-    color: blue;
+.categoryList li:hover {
+    color: #7a5230;
 }

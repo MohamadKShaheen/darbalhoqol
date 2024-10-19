@@ -8,9 +8,23 @@
 }
 
 .card {
-    flex: 0 1 calc(15%);
+    flex: 0 1 calc(20%);
     background-color: #00000000;
     text-align: center;
+    cursor: pointer;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);;
+    background-color: #fff;
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 @media (max-width: 1200px) {

@@ -1,6 +1,6 @@
 .container {
     height: auto;
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 30%, rgba(58,91,57,1) 30%, rgba(58,91,57,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 30%, rgba(58,91,57,1) 30%, rgba(58,91,57,1) 100%), linear-gradient(90deg, rgba(58,91,57,1) 0%, rgba(58,91,57,1) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%);
     padding-bottom: 1.25vw;
     padding-top: 4vw;
 }

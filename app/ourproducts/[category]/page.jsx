@@ -5,7 +5,7 @@ const category = ({ params }) => {
   const category = params.category;
 
   return (
-    <CardDisplayer data={products} category={category}/>
+    <CardDisplayer data={products[category]}/>
   );
 }
 
