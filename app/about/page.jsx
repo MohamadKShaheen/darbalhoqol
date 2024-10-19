@@ -16,8 +16,11 @@ export default function AboutPage() {
   return (
     <>
       <div><Image src="/images/about.jpg" alt="" /></div>
-      <div><Divided mode={2} image1="/images/logo.png" text={text} header={header}/></div>
-      <div className={styles.container}><CarouselWithImages images={images} /></div>
+      <div><Divided mode={2} image1="/images/logo.svg" text={text} header={header}/></div>
+      <div className={styles.container}>
+        <CarouselWithImages images={images} />
+        <img className={styles.logo} src="/images/logoGreen.svg" alt=""/>
+      </div>
     </>
   );
 }
