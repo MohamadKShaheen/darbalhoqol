@@ -16,8 +16,28 @@
     cursor: pointer;
     transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
     padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
 }
 
 .categoryList li:hover {
     color: #7a5230;
+}
+
+.sign {
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    transition: content 500ms ease-in-out;
+}
+
+li:hover .sign:not(.selected)::before {
+    content: '...';
+}
+
+.sign.selected::before {
+    content: '→';
 }
