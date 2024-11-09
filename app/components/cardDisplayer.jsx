@@ -1,8 +1,8 @@
 "use client"
 import styles from "./cardDisplayer.module.css";
 import Card from "@/app/components/card";
-import {Modal} from "@mui/material";
-import {useState} from "react";
+import {Box, createTheme, Modal, ThemeProvider} from "@mui/material";
+import {useEffect, useState} from "react";
 import { DataGrid } from '@mui/x-data-grid';
 import Image from "@/app/components/image";
 
@@ -19,15 +19,16 @@ const CardDisplayer = ({ data }) => {
     setShowModal(true);
   }
   const columns = [
-    { field: 'numberOfPieces', headerName: 'Number Of Pieces', width: 200},
-    { field: 'packageType', headerName: 'Package Type', width: 200 },
-    { field: 'netWeight', headerName: 'Net Weight', width: 200 },
+    { field: 'numberOfPieces', headerName: 'Number Of Pieces', width: 150, sortable: false },
+    { field: 'packageType', headerName: 'Package Type', width: 150, sortable: false },
+    { field: 'netWeight', headerName: 'Net Weight', width: 150, sortable: false },
   ];
+
   return (
     <div className={styles.cardContainer}>
-      {data.map((product, index) => (
+      {data?.map((product, index) => (
         <div key={index} className={styles.card} onClick={() => handleOpen(index)}>
-          <Card image={product.image ?? ''} description={product.name}></Card>
+          <Card image={product.image ?? ''} description={product.name ?? ''}></Card>
         </div>
       ))}
       <Modal
@@ -35,23 +36,28 @@ const CardDisplayer = ({ data }) => {
         onClose={handleClose}
       >
         <div className={styles.modal}>
-          <div>
+          <div className={styles.modalHeader}>
             <h1>{product.name}</h1>
           </div>
-          <div className="flex flex-row-reverse items-center">
-            <div>
+          <div className={styles.modalContainer}>
+            <div className={styles.modalImage}>
               <Image src={product.image ?? ''} />
             </div>
-            <div>
+            <Box className={styles.modalTable}>
               <DataGrid
                 rows={product.products}
                 columns={columns}
-                hideFooterPagination={true}
                 rowSelection={false}
                 disableColumnMenu={true}
                 disableSelectionOnClick
+                hideFooter={true}
+                sx={{
+                  '& .MuiDataGrid-row--borderBottom': {
+                    backgroundColor: "#00000000 !important",
+                  },
+                }}
               />
-            </div>
+            </Box>
           </div>
         </div>
       </Modal>

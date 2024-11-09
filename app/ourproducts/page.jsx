@@ -3,7 +3,7 @@ import products from "@/public/Data/products";
 
 const OurProducts = () => {
   return (
-    <CardDisplayer data={products} category="Main"/>
+    <CardDisplayer data={products["Main"]} />
   );
 }
 

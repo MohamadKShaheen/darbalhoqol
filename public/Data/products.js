@@ -2,6 +2,7 @@ const products = {
   Dry: [
     {
       name: "Dried Molokhia",
+      image: "",
       products: [
         {
           numberOfPieces: "20",
@@ -17,6 +18,7 @@ const products = {
     },
     {
       name: "Dried Okra",
+      image: "",
       products: [
         {
           numberOfPieces: "20",
@@ -27,6 +29,7 @@ const products = {
     },
     {
       name: "Syrian Sesame Breadsticks",
+      image: "",
       products: [
         {
           numberOfPieces: "20",
@@ -39,6 +42,7 @@ const products = {
   Pickles: [
     {
       name: "Mixed Pickles",
+      image: "",
       products: [
         {
           numberOfPieces: "12",
@@ -69,6 +73,7 @@ const products = {
     },
     {
       name: "Pickled Cucumber",
+      image: "",
       products: [
         {
           numberOfPieces: "12",
@@ -99,6 +104,7 @@ const products = {
     },
     {
       name: "Pickled Peppers",
+      image: "",
       products: [
         {
           numberOfPieces: "12",
@@ -129,6 +135,7 @@ const products = {
     },
     {
       name: "Turnip Pickles",
+      image: "",
       products: [
         {
           numberOfPieces: "12",
@@ -161,6 +168,7 @@ const products = {
   Others: [
     {
       name: "Artichoke",
+      image: "",
       products: [
         {
           numberOfPieces: "12",
@@ -186,6 +194,7 @@ const products = {
     },
     {
       name: "Grape Leaves",
+      image: "",
       products: [
         {
           numberOfPieces: "12",
@@ -216,6 +225,7 @@ const products = {
     },
     {
       name: "Makdous",
+      image: "",
       products: [
         {
           numberOfPieces: "12",
@@ -251,6 +261,7 @@ const products = {
     },
     {
       name: "Premium Sesame Tahini",
+      image: "",
       products: [
         {
           numberOfPieces: "12",
@@ -266,6 +277,7 @@ const products = {
     },
     {
       name: "Stuffed Grape Leaves Yalanji",
+      image: "",
       products: [
         {
           numberOfPieces: "24",
@@ -278,6 +290,7 @@ const products = {
   Vinegar: [
     {
       name: "Apple Vinegar",
+      image: "",
       products: [
         {
           numberOfPieces: "12",
@@ -298,6 +311,7 @@ const products = {
     },
     {
       name: "Grape Vinegar",
+      image: "",
       products: [
         {
           numberOfPieces: "12",
@@ -318,6 +332,7 @@ const products = {
     },
     {
       name: "Industrial White Vinegar",
+      image: "",
       products: [
         {
           numberOfPieces: "12",
@@ -338,6 +353,7 @@ const products = {
     },
     {
       name: "Pomegranate Molasses",
+      image: "",
       products: [
         {
           numberOfPieces: "12",
@@ -375,6 +391,7 @@ const products = {
   Sauces: [
     {
       name: "Ketchup",
+      image: "",
       products: [
         {
           numberOfPieces: "12",
@@ -405,8 +422,8 @@ const products = {
     },
     {
       name: "Pepper Paster",
+      image: "",
       products: [
-        
         {
           numberOfPieces: "12",
           packageType: "Glass",
@@ -466,6 +483,7 @@ const products = {
     },
     {
       name: "Pizza Sauce",
+      image: "",
       products: [
         
         {
@@ -487,6 +505,7 @@ const products = {
     },
     {
       name: "Tomato Paster 28-30 Brix",
+      image: "",
       products: [
         
         {
@@ -550,8 +569,8 @@ const products = {
   OliveOil: [
     {
       name: "Carrot-stuffed Olives",
+      image: "",
       products: [
-        
         {
           numberOfPieces: "12",
           packageType: "Glass",
@@ -657,8 +676,8 @@ const products = {
     },
     {
       name: "Grilled Olives",
+      image: "",
       products: [
-        
         {
           numberOfPieces: "12",
           packageType: "Glass",
@@ -693,8 +712,8 @@ const products = {
     },
     {
       name: "Kalamata Black Olive",
+      image: "",
       products: [
-        
         {
           numberOfPieces: "12",
           packageType: "Glass",
@@ -729,8 +748,8 @@ const products = {
     },
     {
       name: "Kalamata Green Olives",
+      image: "",
       products: [
-        
         {
           numberOfPieces: "12",
           packageType: "Glass",
@@ -765,8 +784,8 @@ const products = {
     },
     {
       name: "Lemon-Stuffed Olives",
+      image: "",
       products: [
-        
         {
           numberOfPieces: "12",
           packageType: "Glass",
@@ -801,6 +820,7 @@ const products = {
     },
     {
       name: "Pimento-Stuffed Olives",
+      image: "",
       products: [
         
         {
@@ -837,8 +857,8 @@ const products = {
     },
     {
       name: "Salad Olives",
+      image: "",
       products: [
-        
         {
           numberOfPieces: "12",
           packageType: "Glass",
@@ -873,8 +893,8 @@ const products = {
     },
     {
       name: "Salqin Black Olives",
+      image: "",
       products: [
-        
         {
           numberOfPieces: "12",
           packageType: "Glass",
@@ -909,8 +929,8 @@ const products = {
     },
     {
       name: "Tuffahi Green Olives",
+      image: "",
       products: [
-        
         {
           numberOfPieces: "12",
           packageType: "Glass",
@@ -947,8 +967,8 @@ const products = {
   Jams: [
     {
       name: "Apricot Jam",
+      image: "",
       products: [
-        
         {
           numberOfPieces: "12",
           packageType: "Glass",
@@ -993,8 +1013,8 @@ const products = {
     },
     {
       name: "Cherry Jam",
+      image: "",
       products: [
-        
         {
           numberOfPieces: "12",
           packageType: "Glass",
@@ -1039,8 +1059,8 @@ const products = {
     },
     {
       name: "Fig Jam",
+      image: "",
       products: [
-        
         {
           numberOfPieces: "12",
           packageType: "Glass",
@@ -1085,8 +1105,8 @@ const products = {
     },
     {
       name: "Strawberry Jam",
+      image: "",
       products: [
-        
         {
           numberOfPieces: "12",
           packageType: "Glass",
