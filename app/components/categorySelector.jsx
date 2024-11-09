@@ -64,6 +64,7 @@ const CategorySelector = ({className}) => {
           <span className={`${styles.sign} ${selectedCategory === "Dry" ? styles.selected : ''}`}></span>
         </li>
       </ul>
+      <div className={"absolute bottom-[-160px] left-0 w-[100%] h-[160px] bg-[#3A5B39] z-[-1]"}></div>
     </div>
   );
 }

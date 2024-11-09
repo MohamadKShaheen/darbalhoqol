@@ -1,6 +1,7 @@
 .sidebar {
     background-color: #3A5B39;
     padding: 20px 0;
+    position: relative;
 }
 
 .categoryList {
