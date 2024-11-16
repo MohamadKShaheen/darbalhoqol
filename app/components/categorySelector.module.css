@@ -21,6 +21,7 @@
     justify-content: space-between;
     height: 30px;
     align-items: center;
+    font-style: normal;
 }
 
 .categoryList li:hover {
@@ -37,8 +38,11 @@
 
 li:hover .sign:not(.selected)::before {
     content: '...';
+    font-size: 16px;
 }
 
 .sign.selected::before {
-    content: '→';
+    content: '▷';
+    font-size: 16px;
+    line-height: 30;
 }
