@@ -3,22 +3,28 @@ import styles from './map.module.css';
 const Map = () => {
   const customers = [
     {
-      className: "canada"
+      className: "canada",
+      flag: '🇨🇦',
     },
     {
       className: "oman",
+      flag: '🇴🇲',
     },
     {
-      className: "UAE"
+      className: "UAE",
+      flag: '🇦🇪',
     },
     {
-      className: "saudi"
+      className: "saudi",
+      flag: '🇸🇦',
     },
     {
-      className: "syria"
+      className: "syria",
+      flag: '🇸🇾',
     },
     {
-      className: "egypt"
+      className: "egypt",
+      flag: '🇪🇬',
     }
   ]
   return (
@@ -30,7 +36,12 @@ const Map = () => {
       </div>
       <div className={styles.secondContainer}>
         {customers.map((customer, index) => (
-          <img src="/images/pin.svg" alt="" className={styles[customer.className]} key={index}/>
+          <div className={`${styles[customer.className]} w-[15px]`} key={index}>
+            <div className='relative w-full h-full'>
+              <img src="/images/pin.svg" className={styles.pin}/>
+              <div className={styles.flag}>{customer.flag}</div>
+            </div>
+          </div>
         ))}
         <img className={styles.image} src="/images/World_map.jpg" alt=""/>
       </div>

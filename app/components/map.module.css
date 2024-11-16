@@ -27,10 +27,36 @@
     position: relative;
 }
 
+.pin {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.flag {
+    transform: scale(0);
+    transition: transform 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+}
+
 .canada {
     position: absolute;
     left: 24%;
     top: 29%;
+}
+
+.canada:hover .flag {
+    transform: scale(1);
+}
+
+.canada:hover .pin {
+    transform: scale(0);
 }
 
 .oman {
@@ -39,10 +65,26 @@
     top: 51%;
 }
 
+.oman:hover .flag {
+    transform: scale(1);
+}
+
+.oman:hover .pin {
+    transform: scale(0);
+}
+
 .UAE {
     position: absolute;
     left: 61.5%;
     top: 48%;
+}
+
+.UAE:hover .flag {
+    transform: scale(1);
+}
+
+.UAE:hover .pin {
+    transform: scale(0);
 }
 
 .saudi {
@@ -51,16 +93,40 @@
     top: 49%;
 }
 
+.saudi:hover .flag {
+    transform: scale(1);
+}
+
+.saudi:hover .pin {
+    transform: scale(0);
+}
+
 .syria {
     position: absolute;
     left: 57%;
     top: 43%;
 }
 
+.syria:hover .flag {
+    transform: scale(1);
+}
+
+.syria:hover .pin {
+    transform: scale(0);
+}
+
 .egypt {
     position: absolute;
     left: 54.5%;
     top: 46%;
+}
+
+.egypt:hover .flag {
+    transform: scale(1);
+}
+
+.egypt:hover .pin {
+    transform: scale(0);
 }
 
 .image {
