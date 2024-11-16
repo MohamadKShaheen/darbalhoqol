@@ -67,3 +67,11 @@
 .paragraph {
     font-size: 1vw;
 }
+
+.paragraph a {
+    color: #3f3fff;
+}
+
+.paragraph a:hover {
+    color: #0000ff;
+}

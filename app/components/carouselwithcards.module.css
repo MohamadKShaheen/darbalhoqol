@@ -22,6 +22,12 @@
     background-color: #2E2C2B;
 }
 
+.headerLink::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+}
+
 .cardWrapper {
     overflow: hidden;
     display: flex;
@@ -30,4 +36,11 @@
 
 .card {
     width: calc(100vw / 7);
+    position: relative;
+}
+
+.cardLink::before {
+    content: '';
+    position: absolute;
+    inset: 0;
 }

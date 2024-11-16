@@ -23,6 +23,7 @@ const Divided = ({ mode, image1, image2, header, text }) => {
               </h2>
               <p className={styles.paragraph}>
                 {text}
+                <a href="../about"> see more...</a>
               </p>
             </div>
           </div>
