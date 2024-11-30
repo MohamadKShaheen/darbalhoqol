@@ -1,5 +1,5 @@
 'use client'
-import styles from './CategorySelector.module.css';
+import styles from './categorySelector.module.css';
 import {useRouter} from "next/navigation";
 import {useState} from "react";
 
