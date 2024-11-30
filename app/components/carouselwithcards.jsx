@@ -1,4 +1,4 @@
-import styles from './CarouselWithCards.module.css';
+import styles from './carouselwithcards.module.css';
 import Card from "@/app/components/card";
 
 export default function CarouselWithCards() {

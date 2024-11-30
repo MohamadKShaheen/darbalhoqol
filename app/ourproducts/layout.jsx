@@ -1,4 +1,4 @@
-import CategorySelector from '@/app/components/CategorySelector';
+import CategorySelector from '@/app/components/categorySelector';
 
 export default function OurProductsLayout({ children }) {
   return (
