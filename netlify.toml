@@ -1,0 +1,3 @@
+[build]
+node_version = "20"
+command = "CI= npm run build"
